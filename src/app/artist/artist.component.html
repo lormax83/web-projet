@@ -1,0 +1,41 @@
+Nombre d'Albums : {{nbrAlbums}} <br>
+Nombre de Musique: {{nbrSongs}} <br>
+<div>
+    <canvas baseChart
+        [datasets]="lineChartData"
+        [labels]="lineChartLabels"
+        [colors]="lineChartColors"
+        [legend]="chartLegend"
+        [chartType]="lineChartType"
+        [plugins]="chartPlugins">
+    </canvas>
+</div>
+
+<div>
+    <canvas baseChart
+        [datasets]="barChartData"
+        [labels]="lineChartLabels"
+        [colors]="lineChartColors"
+        [legend]="chartLegend"
+        [chartType]="lineChartType"
+        [plugins]="chartPlugins">
+    </canvas>
+</div>
+<div class="third" style="background-image: url(/assets/img/31366.jpg);">
+    <h2>Astrologique</h2>
+    {{astroNom}}
+  </div>
+<table class="mat-elevation-z8" style="width: 100%;"*ngFor="let element of listAlbums">
+    <tr>
+        <td><img mat-card-image src={{element.cover.small}}><br>
+            <a [routerLink]="['/album',element.name, element.title]">{{element.title}}</a></td>
+        <td>
+            <div *ngFor="let songs of element.songs">
+                <a [routerLink]="['/song',element.name, element.title, songs.title]">{{songs.title}}</a><br>
+            </div>
+            
+        </td>
+    </tr>
+</table>
+
+

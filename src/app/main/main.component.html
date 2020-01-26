@@ -1,0 +1,55 @@
+<div class="first">
+  <div class="col">
+  <div class="PieChart">
+    <canvas baseChart
+      [data]="pieChartDataNbr"
+      [labels]="pieChartLabelsNbr"
+      [chartType]="pieChartType"
+      [options]="chartOptions"
+      [plugins]="chartPlugins"
+      [colors]="chartColors"
+      [legend]="chartLegend">
+    </canvas>
+  </div>
+  </div>
+  
+  <div class="col">
+    <h2>Nombre d'albums, artistes et de musiques sur WASABI</h2>
+    <div class="aam"><img class="picto" src="\assets\img\disque.png">
+    <img class="picto" src="\assets\img\guitare.jpg"> 
+    <img class="picto" src="\assets\img\album.png"></div>
+  </div>
+  </div>
+<div class="second">
+  <div class="col">
+      <h2>Classification des musiques présentes sur WASABI</h2>
+    </div>
+<div class="col">
+<div class="PieChart">
+  <canvas baseChart
+    [data]="pieChartData"
+    [labels]="pieChartLabels"
+    [chartType]="pieChartType"
+    [options]="chartOptions"
+    [plugins]="chartPlugins"
+    [colors]="chartColors"
+    [legend]="chartLegend">
+  </canvas>
+</div>
+</div>
+</div>
+  
+<div class="third">
+  <h2>Nombre de musiques par Language</h2>
+<div class="BarChart">
+  <canvas baseChart
+    [datasets]="barChartData"
+    [labels]="barChartLabels"
+    [chartType]="barChartType"
+    [options]="chartOptions"
+    [plugins]="chartPlugins"
+    [colors]="chartColors"
+    [legend]="chartLegend">
+  </canvas>
+</div>
+</div>

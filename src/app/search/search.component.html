@@ -1,0 +1,21 @@
+<div class="search">
+<div class="black">
+  <div class="search-bar">
+  <mat-icon aria-hidden="false" aria-label="Example home icon"[routerLink]="['/home']">home</mat-icon>
+  
+  <mat-form-field class="form-field">
+    <input matInput type="text" placeholder="Search" [(ngModel)]="value" (keyup)="onSubmitGet()">
+    <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="onReset()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </mat-form-field>
+  
+  <table>
+    <tr *ngFor="let element of array" (click)="onSearch(element)">
+      <td><img src="{{element.picture}}" alt=""></td>
+      <td>{{element.name}}</td>
+    </tr> 
+  </table>
+  </div>
+  </div>
+</div>

@@ -1,0 +1,46 @@
+.calendar{
+    margin-left: 200px;
+    margin-right: auto;
+    width: 70%;
+    background-color: antiquewhite;
+    /*padding: 50px;*/
+    border-radius: 10px;
+    padding: 30px;
+}
+.col{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
+.first{
+    background-color: thistle;
+}
+.second{
+    background-color: cadetblue;
+}
+.third{
+    background-color: rgb(211, 225, 226);
+    padding: 30px;
+}
+.fourth{
+    background-color: rgb(173, 155, 189);
+    padding: 30px;
+    height: 500px;
+}
+h2{
+    vertical-align: middle;
+    text-align: center!important;
+}
+.picto{
+    width: 200px;
+    /*display: inline-block;*/
+}
+.aam{
+   width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    
+}
